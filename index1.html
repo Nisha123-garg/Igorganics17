@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style1.css"> 
+    <title>user dashboard</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+             <div class="bar-icon menu-icon">
+               <a href="#"> <i class="fas fa-bars"></i></a>
+             </div>             
+                <div class="side-icon">
+                    <a href="#"><i class="far fa-bell"></i></a>
+                    <a href="#"><i class="far fa-comment"></i></a>
+                    <img src="images/user.png" alt="">
+                </div>    
+                <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">   
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  User
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">User 1</a>
+                                  <a class="dropdown-item" href="#">User 2</a>
+                                  <a class="dropdown-item" href="#">User 3</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>                              
+        </header>
+        <nav class="navbar navbar-expand-lg  sticky-top navbar-dark">
+            <div class="main-heading">
+                <a class="navbar-brand" href="#"> <img src="images/logo1.png" class="logo" alt="logo"></a>
+            </div>
+                     
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse menu-list" id="navbarText">
+                  <ul class="navbar-nav ml-auto">
+                    <li><a class="nav-item active nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a class="nav-item nav-link" href="#about_us">About us</a></li>    
+                    <li> <a class="nav-item nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-item nav-link" href="#contact us.html">Contact Us</a></li>          
+                   </ul>
+                </div>
+        </nav>           
+        <aside class="sidenav">
+            <div class="sidenav__close-icon text-white m-1">
+                <i class="fas fa-times"></i>
+            </div>
+           <div class="logo mt-4">
+               <img src="images/logo.png" alt="">
+           </div>
+           <div class="side-menu-list">
+               <ul class="list-unstyled components">
+                   <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-home mr-2 list-icon"></i>HOME</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>
+                   </li> 
+               </ul>
+           </div>
+           <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#faqSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="far fa-question-circle mr-2 list-icon"></i>FAQ</a>
+                 <ul class="collapse list-unstyled" id="faqSubmenu">
+                     <li><a href="#">FAQ 1</a></li>
+                     <li><a href="#">FAQ 2</a></li>
+                     <li><a href="#">FAQ 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#addSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="far fa-calendar-plus mr-2 list-icon"></i>ADD FUNDS</a>
+                 <ul class="collapse list-unstyled" id="addSubmenu">
+                     <li><a href="#">ADD FUNDS 1</a></li>
+                     <li><a href="#">ADD FUNDS 2</a></li>
+                     <li><a href="#">ADD FUNDS 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#balanceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-balance-scale mr-2 list-icon"></i>My Balance</a>
+                 <ul class="collapse list-unstyled" id="balanceSubmenu">
+                     <li><a href="#">My Balance 1</a></li>
+                     <li><a href="#">My Balance 2</a></li>
+                     <li><a href="#">My Balance 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cog mr-2 list-icon"></i>SERVICES</a>
+                 <ul class="collapse list-unstyled" id="servicesSubmenu">
+                     <li><a href="#">SERVICES 1</a></li>
+                     <li><a href="#">SERVICES 2</a></li>
+                     <li><a href="#">SERVICES 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#settingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cogs mr-2 list-icon"></i> settings</a>
+                 <ul class="collapse list-unstyled" id="settingSubmenu">
+                     <li><a href="#"> settings 1</a></li>
+                     <li><a href="#"> settings 2</a></li>
+                     <li><a href="#"> settings 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#editSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-user-edit mr-2 list-icon"></i>edit profile</a>
+                 <ul class="collapse list-unstyled" id="editSubmenu">
+                     <li><a href="#">edit profile 1</a></li>
+                     <li><a href="#">edit profile 2</a></li>
+                     <li><a href="#">edit profile 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#paymentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-file-invoice-dollar mr-2 list-icon"></i>Payments history</a>
+                 <ul class="collapse list-unstyled" id="paymentsSubmenu">
+                     <li><a href="#">Payments history 1</a></li>
+                     <li><a href="#">Payments history 2</a></li>
+                     <li><a href="#">Payments history 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="side-menu-list">
+            <ul class="list-unstyled components">
+                <li class="active">
+                 <a href="#orderSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-history mr-2 list-icon"></i>order history</a>
+                 <ul class="collapse list-unstyled" id="orderSubmenu">
+                     <li><a href="#">order history 1</a></li>
+                     <li><a href="#">order history 2</a></li>
+                     <li><a href="#">order history 3</a></li>
+                 </ul>
+                </li> 
+            </ul>
+        </div>
+        <div class="logout">            
+            <h5><a href="#"><i class="fas fa-sign-out-alt"></i></a>logout</h5>
+        </div>
+        </aside>
+        <main class="main">
+            <div class="main-header">
+                <p>Amazing New Service for all of you!<br><br>
+                    Check out our service where you can boost your engagement and get 100% REAL & ORGANIC 
+                    likes, comments and followers. (No Password Required)<br><br>                    
+                    We work with 2 type of posts:-<br>
+                    * OLD POST - already posted<br>
+                    * NEW POST- yet to be posted<br><br>                    
+                    For further details use our chat support. We are available 24x7 at your service.</p>
+            </div> 
+            <div class="fund-form">
+                <form>
+                    <div>
+                        <input type="text" id="funds-input" placeholder="Add funds with paypal min $5">
+                        <input type="submit" value="ADD FUNDS" id="fund-button">                       
+                        <img src="images/paypal.png" alt="" >                        
+                      </div>
+                </form>
+            </div> 
+            <div class="balance-sheet">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Balance in $</th>
+                            <th class="balance-value">$0</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rate Per 100 Views</td>
+                            <td class="balance-value">$0.2</td>
+                        </tr>
+                        <tr>
+                            <td>Rate Per 100 Views Plus Impressions</td>
+                            <td class="balance-value">$0.3</td>
+                        </tr>
+                        <tr>
+                            <td>Rate Per 100 Views</td>
+                            <td class="balance-value">$0.2</td>
+                        </tr>
+                        <tr>
+                            <td>Rate Per 100 Views Plus Impressions</td>
+                            <td class="balance-value">$0.3</td>
+                        </tr>
+                        <tr>
+                            <td>Rate Per 100 Views</td>
+                            <td class="balance-value">$0.2</td>
+                        </tr>
+                        <tr>
+                            <td>Rate Per 100 Views Plus Impressions</td>
+                            <td class="balance-value">$0.3</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+        </main>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    const menuIconEl = $('.menu-icon');
+    const sidenavEl = $('.sidenav');
+    const sidenavCloseEl = $('.sidenav__close-icon');
+
+    // Add and remove provided class names
+    function toggleClassName(el, className) {
+      if (el.hasClass(className)) {
+        el.removeClass(className);
+      } else {
+        el.addClass(className);
+      }
+    }
+    // Open the side nav on click
+    menuIconEl.on('click', function() {
+      toggleClassName(sidenavEl, 'active');
+    });
+
+    // Close the side nav on click
+    sidenavCloseEl.on('click', function() {
+      toggleClassName(sidenavEl, 'active');
+    });
+  </script>
+<script src="js/bootstrap.js"></script>
+<script src="js/all.js"></script>     
+</body>
+</html>    

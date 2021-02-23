@@ -1,0 +1,604 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main";
+    height: 100vh;
+}
+.header 
+{
+    grid-area: header;
+    background-color: #191919;
+}
+.sidenav 
+{
+    grid-area: sidenav;
+    background-color: #101d2a;
+}
+.main 
+{
+    grid-area: main;
+    background-image: url('images/main-back.png');
+    padding-bottom: 100px;
+} 
+.header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+} 
+.bar-icon 
+{
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.bar-icon a
+{
+    color: white;
+    font-size: 40px;
+}
+.side-icon
+{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+} 
+.side-icon a
+{
+    padding-top: 10px;
+}
+.side-icon a, img
+{
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.side-icon img
+{
+    padding-left: 50px;
+    width: 50%;
+}
+.main-header
+{
+    background-color: #fdc62c;
+    border-radius: 20px;
+    margin: 50px;
+}
+.main-header p
+{
+    color: black;
+    font-size: 24px;
+    padding: 30px;
+}
+form
+{
+    margin: 70px 90px;
+}
+#funds-input
+{
+    font-size: 18px;
+    width: 40%;
+    padding: 10PX;
+}
+#fund-button
+{
+    background-color: #101d2a;
+    width: 30%;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: none;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+form img
+{
+    width: 10%;
+    height: auto;
+}
+.balance-sheet
+{
+    margin: 0px 50px;
+}
+table thead th
+{
+    color: white;
+    font-size: 24px;
+}
+table tbody td
+{
+    color: white;
+    font-size: 24px;
+}
+.balance-value
+{
+    width: 30%;
+    text-align: center;
+}
+.logo
+{
+    padding-top: 10px;
+    padding-bottom: 130px;
+}
+.user-menu-list ul li a
+{
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #696969;
+}
+.user-menu-list ul li a:hover 
+{
+    text-decoration: none;
+    color: white;
+}
+.user-menu-list ul ul a 
+{
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+}
+.user-menu-list ul li.active > a, a[aria-expanded="true"] 
+{
+    color: gray;
+    display: block;
+}
+a[data-toggle="collapse"] 
+{
+    position: relative;
+}
+.side-menu-list .dropdown-toggle::after 
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.sidenav ul.components 
+{
+    padding-top: 1px;
+    border-bottom: 1px solid #fff;
+}
+.side-menu-list ul li a 
+{
+    padding: 3px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: white !important;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.sidenav ul li a:hover 
+{
+    
+    background: gray;
+    text-decoration: none;
+}
+.sidenav ul li.active > a, a[aria-expanded="true"] 
+{
+    color: gray;
+}
+.side-menu-list ul ul a 
+{
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+.list-icon
+{
+    font-size: 1.5em !important;
+    float: left;
+}
+.logout h5
+{
+   color: white;
+   font-weight: bolder;
+   background-color: #191919;
+   padding: 10px 0px;
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-top: 150px;
+   padding-left: 20px;
+}
+.logout a
+{
+    color: white;
+    padding-right: 10px;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) 
+{
+    .main-header p
+    {
+        font-size: 16px;
+    }
+    form
+    {
+        margin: 70px 70px;
+    }
+    #funds-input
+    {
+        font-size: 14px;
+        width: 40%;       
+    }
+    #fund-button
+    {
+        width: 30%;       
+        font-size: 14px; 
+        margin-left: 20px;
+        margin-right: 10px;     
+    }
+    form img
+    {
+        width: 12%;
+        height: auto;
+    }
+    table thead th
+    {
+        color: white;
+        font-size: 16px;
+    }
+    table tbody td
+    {
+        color: white;
+        font-size: 16px;
+    }
+    .bar-icon a
+    {
+        font-size: 30px;
+    }
+    .side-icon a
+    {
+        padding-top: 5px;
+    }
+    .side-icon a, img
+    {
+        font-size: 25px;
+        padding-left: 14px;
+    }
+    .side-icon img
+    {
+        width: 50%;
+        height:20%;
+    }
+    .grid-container 
+    {
+        display: grid;
+        grid-template-columns: 1fr; /* Side nav is hidden on mobile */
+        grid-template-rows: 100px 1fr;
+        grid-template-areas:
+          'header'
+          'main';
+        height: 100vh;
+    }
+    .sidenav 
+    {
+        display: none;
+        grid-area: sidenav;
+    }
+    .menu-icon 
+    {
+        position: fixed;
+        display: flex;
+        top: 5px;
+        left: 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 1;
+        cursor: pointer;
+        padding: 12px;
+        background-color: #DADAE3;
+    }
+    .side-icon
+    {
+          position: relative;
+          display: flex;
+          margin-left: auto;
+    }    
+      
+    /* Mobile-first side nav styles */
+    .sidenav 
+    {
+        grid-area: sidenav;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 240px;
+        position: fixed;
+        overflow-y: auto;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        z-index: 2; /* Needs to sit above the hamburger menu icon */
+        transform: translateX(-245px);
+        transition: all .6s ease-in-out;
+    }
+      
+    /* The active class is toggled on hamburger and close icon clicks */
+    .sidenav.active 
+    {
+        transform: translateX(0);
+    }
+      
+     /* Only visible on mobile screens */
+    .sidenav__close-icon 
+    {
+        position: absolute;
+        visibility: visible;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #ddd;
+    }
+    .logo
+    {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .sidebar.active 
+    {
+        margin-left: 0;
+    }
+    .logout h5
+    {
+       font-size: 20px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) 
+{
+    .main-header p
+    {
+        font-size: 18px;
+    }
+    #funds-input
+    {
+        font-size: 16px;
+        width: 40%;       
+    }
+    #fund-button
+    {
+        width: 30%;       
+        font-size: 18px; 
+        margin-left: 30px;
+        margin-right: 20px;     
+    }
+    form img
+    {
+        width: 12%;
+        height: auto;
+    }
+    table thead th
+    {
+        color: white;
+        font-size: 18px;
+    }
+    table tbody td
+    {
+        color: white;
+        font-size: 18px;
+    }
+    .bar-icon a
+    {
+        font-size: 30px;
+    }
+    .side-icon a
+    {
+        padding-top: 5px;
+    }
+    .side-icon a, img
+    {
+        font-size: 25px;
+        padding-left: 14px;
+    }
+    .side-icon img
+    {
+        width: 50%;
+        height:20%;
+    }
+    .grid-container 
+    {
+        display: grid;
+        grid-template-columns: 1fr; /* Side nav is hidden on mobile */
+        grid-template-rows: 100px 1fr;
+        grid-template-areas:
+          'header'
+          'main';
+        height: 100vh;
+    }
+    .sidenav 
+    {
+        display: none;
+        grid-area: sidenav;
+    }
+    .menu-icon 
+    {
+        position: fixed;
+        display: flex;
+        top: 5px;
+        left: 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 1;
+        cursor: pointer;
+        padding: 12px;
+        background-color: #DADAE3;
+    }
+    .side-icon
+     {
+          position: relative;
+          display: flex;
+          margin-left: auto;
+    }    
+     .sidenav
+     {
+        grid-area: sidenav;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 240px;
+        position: fixed;
+        overflow-y: auto;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        z-index: 2; /* Needs to sit above the hamburger menu icon */
+        transform: translateX(-245px);
+        transition: all .6s ease-in-out;
+    }
+      
+    /* The active class is toggled on hamburger and close icon clicks */
+    .sidenav.active 
+    {
+        transform: translateX(0);
+    }
+      
+    /* Only visible on mobile screens */
+    .sidenav__close-icon 
+    {
+        position: absolute;
+        visibility: visible;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #ddd;      
+    }
+    .logo
+    {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .sidebar.active 
+    {
+        margin-left: 0;
+    }
+    .logout h5
+    {
+       font-size: 20px;
+    }
+}
+
+/*Medium devices (tables, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+    .main-header p
+    {
+        font-size: 20px;
+    }
+    .bar-icon a
+    {
+        font-size: 40px;
+    }
+    .side-icon a, img
+    {
+        font-size: 25px;
+        padding-left: 15px;
+    }
+    .side-icon a
+    {
+       padding: 8px !important;
+    }
+    form
+    {
+        margin: 70px 60px;
+    }
+    #funds-input
+    {
+        font-size: 15px;
+        width: 40%;       
+    }
+    #fund-button
+    {
+        width: 30%;       
+        font-size: 17px; 
+        margin-left: 30px;
+        margin-right: 20px;     
+    }
+    table thead th
+    {
+        color: white;
+        font-size: 20px;
+    }
+    table tbody td
+    {
+        color: white;
+        font-size: 20px;
+    }
+    form img
+    {
+        width: 13%;
+        height: auto;
+    }
+    .bar-icon 
+    {
+        padding-top: 4px;
+        padding-left: 20px;
+    }
+    .side-icon img
+    {
+        width: 50%;
+        height: 20%;
+    }
+    .side-icon
+    {
+        position: relative;
+        display: flex;
+        margin-left: auto;
+    } 
+    .logout h5
+    {
+       font-size: 25px;
+    }
+    .sidenav__close-icon 
+    {
+        display: none;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{
+    .side-icon a
+    {
+        padding-top: 10px;
+    }  
+    form img
+    {
+        width: 12%;
+        height: auto;
+    }
+    .sidenav__close-icon 
+    {
+        display: none;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) 
+{
+    .sidenav__close-icon 
+    {
+        display: none;
+    }
+}
+
+ 
+
